@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Sms/Core" isTestSource="false" packagePrefix="Octopusz\Sms\Core\" />
+      <sourceFolder url="file://$MODULE_DIR$/Sms/Core/Auth" isTestSource="false" packagePrefix="Octopusz\Sms\Core\Auth\" />
+      <sourceFolder url="file://$MODULE_DIR$/Sms/Core/Autoloader" isTestSource="false" packagePrefix="Octopusz\Sms\Core\Autoloader\" />
+      <sourceFolder url="file://$MODULE_DIR$/Sms/Core/Request" isTestSource="false" packagePrefix="Octopusz\Sms\Core\Request\" />
+      <sourceFolder url="file://$MODULE_DIR$/Sms/Core/Regions" isTestSource="false" packagePrefix="Octopusz\Sms\Core\Regions\" />
+      <sourceFolder url="file://$MODULE_DIR$/Sms/Core/Exception" isTestSource="false" packagePrefix="Octopusz\Sms\Core\Exception\" />
+      <sourceFolder url="file://$MODULE_DIR$/Sms/Core/Profile" isTestSource="false" packagePrefix="Octopusz\Sms\Core\Profile\" />
+      <sourceFolder url="file://$MODULE_DIR$/Sms/Request/V20170525" isTestSource="false" packagePrefix="Octopusz\Sms\Request\V20170525\" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="Octopusz\AliyunSms\" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,28 @@
+{
+  "name": "octopusz/aliyun-sms",
+  "description": "aliyun-sms",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "octopusz",
+      "email": "octopusz@yeah.net"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Octopusz\\AliyunSms\\": "src/",
+      "Octopusz\\Sms\\Request\\V20170525\\": "Sms/Request/V20170525",
+      "Octopusz\\Sms\\Core\\Auth\\": "Sms/Core/Auth",
+      "Octopusz\\Sms\\Core\\Exception\\": "Sms/Core/Exception",
+      "Octopusz\\Sms\\Core\\Profile\\": "Sms/Core/Profile",
+      "Octopusz\\Sms\\Core\\Request\\": "Sms/Core/Request",
+      "Octopusz\\Sms\\Core\\Regions\\": "Sms/Core/Regions",
+      "Octopusz\\Sms\\Core\\Autoloader\\": "Sms/Core/Autoloader",
+      "Octopusz\\Sms\\Core\\": "Sms/Core/"
+    }
+  }
+}
