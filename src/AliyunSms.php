@@ -57,5 +57,22 @@ class AliyunSms
 
     }
 
+    public function sendShareSms($phone, $content, $templateCode, $phoneNumbers, $signName, $resourceOwnerAccount = null, $templateParam = null, $resourceOwnerId = null, $smsUpExtendCode = null)
+    {
+        $request = new SendSmsRequest();
+        $request->setTemplateCode($templateCode);
+        $request->setPhoneNumbers($phoneNumbers);
+        $request->setSignName($signName);
+        $request->setResourceOwnerAccount($resourceOwnerAccount);
+        $request->setTemplateParam(json_encode(array(  // 短信模板中字段的值
+            "phone" => $phone,
+            "content" => $content,
+        ), JSON_UNESCAPED_UNICODE));
+        $request->setResourceOwnerId($resourceOwnerId);
+        $request->setSmsUpExtendCode($smsUpExtendCode);
+        return $this->_client->getAcsResponse($request);
+
+    }
+
 
 }
