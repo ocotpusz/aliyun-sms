@@ -41,6 +41,18 @@ class AliyunSms
         $this->_client = new DefaultAcsClient($iClientProfile);
     }
 
+    /**
+     * 发送验证信息
+     * @param $code
+     * @param $templateCode
+     * @param $phoneNumbers
+     * @param $signName
+     * @param null $resourceOwnerAccount
+     * @param null $templateParam
+     * @param null $resourceOwnerId
+     * @param null $smsUpExtendCode
+     * @return mixed|\SimpleXMLElement
+     */
     public function sendSms($code,$templateCode, $phoneNumbers, $signName, $resourceOwnerAccount = null, $templateParam = null, $resourceOwnerId = null, $smsUpExtendCode = null)
     {
         $request = new SendSmsRequest();
@@ -57,6 +69,19 @@ class AliyunSms
 
     }
 
+    /**
+     * 发送共享
+     * @param $phone
+     * @param $content
+     * @param $templateCode
+     * @param $phoneNumbers
+     * @param $signName
+     * @param null $resourceOwnerAccount
+     * @param null $templateParam
+     * @param null $resourceOwnerId
+     * @param null $smsUpExtendCode
+     * @return mixed|\SimpleXMLElement
+     */
     public function sendShareSms($phone, $content, $templateCode, $phoneNumbers, $signName, $resourceOwnerAccount = null, $templateParam = null, $resourceOwnerId = null, $smsUpExtendCode = null)
     {
         $request = new SendSmsRequest();
@@ -74,5 +99,30 @@ class AliyunSms
 
     }
 
+    /**
+     * 阿里云发送短信
+     * @param $phone
+     * @param $content
+     * @param $templateCode
+     * @param $phoneNumbers
+     * @param $signName
+     * @param null $templateParam
+     * @param null $resourceOwnerAccount
+     * @param null $resourceOwnerId
+     * @param null $smsUpExtendCode
+     * @return mixed|\SimpleXMLElement
+     */
+    public function smsSend($templateCode, $phoneNumbers, $signName,  $templateParam = null, $resourceOwnerAccount = null, $resourceOwnerId = null, $smsUpExtendCode = null)
+    {
+        $request = new SendSmsRequest();
+        $request->setTemplateCode($templateCode);
+        $request->setPhoneNumbers($phoneNumbers);
+        $request->setSignName($signName);
+        $request->setResourceOwnerAccount($resourceOwnerAccount);
+        $request->setTemplateParam($templateParam);
+        $request->setResourceOwnerId($resourceOwnerId);
+        $request->setSmsUpExtendCode($smsUpExtendCode);
+        return $this->_client->getAcsResponse($request);
 
+    }
 }

@@ -10,7 +10,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Sms/Core/Exception" isTestSource="false" packagePrefix="Octopusz\Sms\Core\Exception\" />
       <sourceFolder url="file://$MODULE_DIR$/Sms/Core/Profile" isTestSource="false" packagePrefix="Octopusz\Sms\Core\Profile\" />
       <sourceFolder url="file://$MODULE_DIR$/Sms/Request/V20170525" isTestSource="false" packagePrefix="Octopusz\Sms\Request\V20170525\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="Octopusz\AliyunSms\" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
